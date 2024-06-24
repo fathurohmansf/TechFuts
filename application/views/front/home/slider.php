@@ -5,7 +5,7 @@
     <?php foreach($slider_data as $slider){ ?>
     <li>
       <a href="<?php echo $slider->link ?>" target="_self">
-        <img src="<?php echo base_url('assets/images/slider/').$slider->foto.$slider->foto_type?>" alt="<?php echo $slider->nama_slider ?>">
+        <img src="<?php echo base_url('assets/images/slider/').$slider->foto.$slider->foto_type?>" alt="<?php echo $slider->nama_slider ?>" style="border-radius: 50px;">
       </a>
     </li>
     <?php } ?>

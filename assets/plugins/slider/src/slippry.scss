@@ -12,16 +12,16 @@
  * Released under the MIT license - http://opensource.org/licenses/MIT
  */
 
-$color_high: #e24b70 !default;     // highlight colour
-$color_gray: #ccc !default;        // neutral colour
-$controls_size: 2.8em !default;    // size of the next/ prev buttons
-$pager_size: 1.2em !default;       // size of the pager bubbles
-$trans_ease: ease !default;        // easing for the transitions
-$mobile_break: 600px !default;     // breakpoint to use some special mobile styling
-$spinner_url: '/images/sy-loader.gif' !default;
-$arrows_url: '/images/arrows.svg' !default;
+$color_high: #e24b70 !default; // highlight colour
+$color_gray: #ccc !default; // neutral colour
+$controls_size: 2.8em !default; // size of the next/ prev buttons
+$pager_size: 1.2em !default; // size of the pager bubbles
+$trans_ease: ease !default; // easing for the transitions
+$mobile_break: 600px !default; // breakpoint to use some special mobile styling
+$spinner_url: "/images/sy-loader.gif" !default;
+$arrows_url: "/images/arrows.svg" !default;
 
-@mixin animation ($animation) {
+@mixin animation($animation) {
   animation-name: $animation;
   animation-fill-mode: forwards;
 }
@@ -47,7 +47,8 @@ $arrows_url: '/images/arrows.svg' !default;
 /* added to the original element calling slippry */
 .sy-box {
   &.sy-loading {
-    .sy-slides-wrap, .sy-pager {
+    .sy-slides-wrap,
+    .sy-pager {
       visibility: hidden;
     }
     background: url($spinner_url) 50% 50% no-repeat;
@@ -72,6 +73,7 @@ $arrows_url: '/images/arrows.svg' !default;
   width: 100%;
   position: absolute;
   overflow: hidden;
+  border-radius: 30px;
 }
 /* list containing the slides */
 .sy-list {
@@ -111,19 +113,23 @@ $arrows_url: '/images/arrows.svg' !default;
   &.sy-active {
     z-index: 3;
   }
-  > img { // with one image as content -> full size
+  > img {
+    // with one image as content -> full size
     margin: 0;
     padding: 0;
     display: block;
     width: 100%;
     border: 0;
+    border-radius: 30px;
   }
-  > a { // styling for link on whole slide
+  > a {
+    // styling for link on whole slide
     margin: 0;
     padding: 0;
     display: block;
     width: 100%;
-    > img { // with one image as content -> full size
+    > img {
+      // with one image as content -> full size
       margin: 0;
       padding: 0;
       display: block;
@@ -171,10 +177,12 @@ $arrows_url: '/images/arrows.svg' !default;
       height: 100%;
       display: block;
       text-indent: -9999px;
-      &:link, &:visited {
+      &:link,
+      &:visited {
         opacity: 0.4;
       }
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         opacity: 0.8;
         outline: none;
       }
@@ -200,7 +208,7 @@ $arrows_url: '/images/arrows.svg' !default;
       }
     }
   }
-  @media only screen and (max-device-width : $mobile_break) {
+  @media only screen and (max-device-width: $mobile_break) {
     display: block;
     $controls_size: $controls_size / 2;
     li {
@@ -225,22 +233,25 @@ $arrows_url: '/images/arrows.svg' !default;
   .sy-caption {
     position: relative;
     left: -50%;
-    background-color: rgba(0,0,0,0.54);
+    background-color: rgba(0, 0, 0, 0.54);
     color: #fff;
     padding: 0.4em 1em;
     border-radius: 1.2em;
     a {
-      &:link, &:visited {
+      &:link,
+      &:visited {
         color: $color_high;
         font-weight: 600;
         text-decoration: none;
       }
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         text-decoration: underline;
       }
     }
   }
-  @media only screen and (max-device-width : $mobile_break), screen and (max-width : $mobile_break) {
+  @media only screen and (max-device-width: $mobile_break),
+    screen and (max-width: $mobile_break) {
     left: 0;
     bottom: 0.4em;
     .sy-caption {
@@ -277,10 +288,12 @@ $arrows_url: '/images/arrows.svg' !default;
       display: block;
       background-color: $color_gray;
       text-indent: -9999px;
-      &:link, &:visited {
-        opacity: 1.0;
+      &:link,
+      &:visited {
+        opacity: 1;
       }
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         opacity: 0.6;
       }
       background-size: 2em;
