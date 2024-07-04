@@ -58,8 +58,8 @@
             </ul>
           </li>
         <?php } else { ?>
-          <li class="nav-item"><a class="nav-link" href="<?php echo base_url('auth/register') ?>">Register</a></li>
-          <li class="nav-item"><a class="nav-link" href="<?php echo base_url('auth/login') ?>">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url('auth/register') ?>"><b style="font-size: 13px">Register</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url('auth/login') ?>"><b style="font-size: 13px">Login</b></a></li>
         <?php } ?>
       </ul>
     </div><!-- /.navbar-collapse -->

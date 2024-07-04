@@ -15,5 +15,5 @@
 	  <script src="<?php echo base_url()?>assets/template/frontend/js/moment.min.js" rel="stylesheet"></script>
     <link href="<?php echo base_url()?>assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?php echo base_url('assets/images/fav.png') ?>" />
+    <link rel="shortcut icon" href="<?php echo base_url('assets/images/favo.png') ?>" />
   </head>
