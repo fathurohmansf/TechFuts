@@ -60,14 +60,6 @@ Saya asumsikan Anda telah menginstall lampp stack, xampp, atau local development
 
 <h2>Catatan</h2>
 <ol>
-  <li>Created by Muhammad Azmi - <a href="https://muhazmi.com">muhazmi.com</a> / AmperaKoding - <a href="https://amperakoding.com">amperakoding.com</a></li>
+  <li>Created by UNM CodingCamp - <a href="https://nusamandiri@ac.id">nusamandiri.com</a> / UNM CodingCamp - <a href="https://nusamandiri@ac.id">nusamandiri.com</a></li>
   <li>Sistem membership dilakukan secara manual dengan cara Customer menghubungi SuperAdmin. Kemudian SuperAdmin akan mengganti Tipe User Customer tersebut di backend panel sebagai SuperAdmin.</li>
-</ol>
-
-<h2>Cara Install Local Development Server</h2>
-Anda bisa menginstall xampp/wampp atau LAMPP Stack di pc/komputer/laptop yang dipakai. Tutorialnya bisa Anda ikuti disini:
-<ol>
-  <li><a href="https://amperakoding.com/article/cara-install-apache-mysql-dan-php-di-os-linux-lampp">Cara Install Apache, MySQL, dan PHP di OS Linux (LAMPP)</a></li>
-  <li><a href="https://www.muhazmi.com/2016/12/cara-install-xampp-yang-baik-dan-benar.html">Cara Install Xampp di OS Linux</a></li>
-  <li><a href="https://www.muhazmi.com/2017/08/cara-install-xampp-yang-baik-dan-benar.html">Cara Install Xampp di OS Windows</a></li>
 </ol>
