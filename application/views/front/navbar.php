@@ -1,83 +1,73 @@
-<nav class="navbar navbar-default navbar-fixed-top bg-primary">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom bg-white">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?php echo base_url() ?>" style="padding:0;">
-        <img src="<?php echo base_url('assets/images/company/').$company_data->foto.$company_data->foto_type ?>" alt="<?php echo $company_data->company_name ?>" width="85px">
-      </a>
-    </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="<?php if($this->uri->segment(1) == ""){echo "active";} ?>">
-          <a href="<?php echo base_url() ?>">Home </a>
+    <a class="navbar-brand" href="<?php echo base_url() ?>" style="padding:0;">
+      <img src="<?php echo base_url('assets/images/company/').$company_data->foto.$company_data->foto_type ?>" alt="<?php echo $company_data->company_name ?>" width="85px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link <?php if($this->uri->segment(1) == ""){echo "active";} ?>" href="<?php echo base_url() ?>">Home</a>
         </li>
-        <li class="<?php if($this->uri->segment(1) == "event"){echo "active";} ?>">
-          <a href="<?php echo base_url('event') ?>"> Event</a>
+        <li class="nav-item">
+          <a class="nav-link <?php if($this->uri->segment(1) == "event"){echo "active";} ?>" href="<?php echo base_url('event') ?>">Event</a>
         </li>
-        <li class="<?php if($this->uri->segment(1) == "gallery"){echo "active";} ?>">
-          <a href="<?php echo base_url('gallery/album') ?>"> Foto</a>
+        <li class="nav-item">
+          <a class="nav-link <?php if($this->uri->segment(1) == "gallery"){echo "active";} ?>" href="<?php echo base_url('gallery/album') ?>">Foto</a>
         </li>
-        <li class="dropdown <?php if($this->uri->segment(1) == "about" or $this->uri->segment(1) == "contact"){echo "active";} ?>">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class="<?php if($this->uri->segment(1) == "about"){echo "active";} ?>">
-              <a href="<?php echo base_url('about') ?>"> Tentang Kami</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <?php if($this->uri->segment(1) == "about" || $this->uri->segment(1) == "contact"){echo "active";} ?>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item <?php if($this->uri->segment(1) == "about"){echo "active";} ?>" href="<?php echo base_url('about') ?>">Tentang Kami</a>
             </li>
-            <li class="<?php if($this->uri->segment(1) == "contact"){echo "active";} ?>">
-              <a href="<?php echo base_url('contact') ?>"> Hubungi Kami</a>
+            <li>
+              <a class="dropdown-item <?php if($this->uri->segment(1) == "contact"){echo "active";} ?>" href="<?php echo base_url('contact') ?>">Hubungi Kami</a>
             </li>
           </ul>
         </li>
-        <li class="<?php if($this->uri->segment(1) == "cart" && $this->uri->segment(2) == ""){echo "active";} ?>">
-          <a href="<?php echo base_url('cart') ?>"> Keranjang</a>
+        <li class="nav-item">
+          <a class="nav-link <?php if($this->uri->segment(1) == "cart" && $this->uri->segment(2) == ""){echo "active";} ?>" href="<?php echo base_url('cart') ?>">Keranjang</a>
         </li>
       </ul>
 
-      <?php if($this->session->userdata('usertype') != NULL){ ?>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hi, <?php echo $this->session->userdata('username') ?> <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="<?php echo base_url('cart/history') ?>">Riwayat Booking</a></li>
-              <li><a href="<?php echo base_url('auth/edit_profil/').$this->session->userdata('user_id') ?>">Edit Profil</a></li>
-              <li><a href="<?php echo base_url('auth/profil') ?>">Profil Saya</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="<?php echo base_url('auth/logout') ?>">Logout</a></li>
+      <ul class="navbar-nav ms-auto">
+        <?php if($this->session->userdata('usertype') != NULL){ ?>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hi, <?php echo $this->session->userdata('username') ?>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+              <li><a class="dropdown-item" href="<?php echo base_url('cart/history') ?>">Riwayat Booking</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('auth/edit_profil/').$this->session->userdata('user_id') ?>">Edit Profil</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('auth/profil') ?>">Profil Saya</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('auth/logout') ?>">Logout</a></li>
             </ul>
           </li>
-        </ul>
-      <?php }else{ ?>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="<?php echo base_url('auth/register') ?>">Register</a></li>
-          <li><a href="<?php echo base_url('auth/login') ?>">Login</a></li>
-        </ul>
-      <?php } ?>
+        <?php } else { ?>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url('auth/register') ?>">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url('auth/login') ?>">Login</a></li>
+        <?php } ?>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-<!-- 
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Simple header</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-    </header>
-  </div> -->
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
