@@ -27,7 +27,7 @@ Project ini dibuat dengan tujuan membantu Anda yang sedang belajar Codeigniter 3
   <li>IonAuth 2</li>
   <li>Codeigniter 3 (3.1.8)</li>
   <li>MySQL</li>
-  <li>Bootstrap 3</li>
+  <li>Bootstrap 5</li>
   <li>AdminLTE 2</li>
 </ol>
 

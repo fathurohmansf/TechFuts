@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2024 at 12:09 PM
+-- Generation Time: Jul 05, 2024 at 03:52 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -44,13 +44,13 @@ CREATE TABLE `album` (
 --
 
 INSERT INTO `album` (`id_album`, `nama_album`, `slug_album`, `foto`, `created_by`, `created_at`, `modified_by`, `modified_at`) VALUES
-(1, 'Latihan Universitas Nusa Mandiri', 'latihan-universitas-nusa-mandiri', 'latihan-universitas-nusa-mandiri20240526210157.jpg', 'amperakoding', '2018-04-11 06:14:08', 'superadmin', '2024-05-26 21:01:57'),
-(2, 'lapangan F', 'lapangan-f', 'lapangan-f20240526210214.jpg', 'amperakoding', '2018-04-11 06:20:52', 'superadmin', '2024-05-26 21:02:14'),
-(3, 'Lapangan E', 'lapangan-e', 'lapangan-e20240526210041.jpg', 'amperakoding', '2018-04-11 06:23:01', 'superadmin', '2024-05-26 21:00:41'),
-(4, 'lapangan D', 'lapangan-d', 'lapangan-d20240526210019.jpg', 'amperakoding', '2018-04-11 06:23:11', 'superadmin', '2024-05-26 21:00:19'),
-(5, 'Lapangan C', 'lapangan-c', 'lapangan-c20240526205959.jpg', 'amperakoding', '2018-04-14 19:16:46', 'superadmin', '2024-05-26 20:59:59'),
-(6, 'Lapangan B', 'lapangan-b', 'lapangan-b20240526205938.jpg', 'amperakoding', '2018-04-14 19:17:05', 'superadmin', '2024-05-26 20:59:38'),
-(7, 'lapangan A', 'lapangan-a', 'lapangan-a20240526205924.jpg', 'amperakoding', '2018-04-14 19:17:19', 'superadmin', '2024-05-26 20:59:24');
+(1, 'Latihan Universitas Nusa Mandiri', 'latihan-universitas-nusa-mandiri', 'latihan-universitas-nusa-mandiri20240526210157.jpg', 'superadmin', '2018-04-11 06:14:08', 'superadmin', '2024-07-04 19:11:32'),
+(2, 'Lapangan Sintetis (Outdoor)', 'lapangan-sintetis-outdoor', 'lapangan-f20240526210214.jpg', 'superadmin', '2018-04-11 06:20:52', 'superadmin', '2024-07-04 22:59:16'),
+(3, 'Lapangan Polypropylene', 'lapangan-polypropylene', 'lapangan-e20240526210041.jpg', 'superadmin', '2018-04-11 06:23:01', 'superadmin', '2024-07-04 22:59:44'),
+(4, 'Lapangan Parquete', 'lapangan-parquete', 'lapangan-d20240526210019.jpg', 'superadmin', '2018-04-11 06:23:11', 'superadmin', '2024-07-04 23:00:00'),
+(5, 'Lapangan Sintetis', 'lapangan-sintetis', 'lapangan-c20240526205959.jpg', 'superadmin', '2018-04-14 19:16:46', 'superadmin', '2024-07-04 23:00:23'),
+(6, 'Lapangan Vinil', 'lapangan-vinil', 'lapangan-b20240526205938.jpg', 'superadmin', '2018-04-14 19:17:05', 'superadmin', '2024-07-04 23:01:04'),
+(7, 'Lapangan Karpet', 'lapangan-karpet', 'lapangan-a20240526205924.jpg', 'superadmin', '2018-04-14 19:17:19', 'superadmin', '2024-07-04 23:01:26');
 
 -- --------------------------------------------------------
 
@@ -71,10 +71,10 @@ CREATE TABLE `bank` (
 --
 
 INSERT INTO `bank` (`id_bank`, `nama_bank`, `atas_nama`, `norek`, `logo`) VALUES
-(1, 'BNI', 'Microtron', '12345678', 'bni.png'),
-(2, 'BRI', 'Microtron', '87873412323', 'bri.png'),
-(3, 'Mandiri', 'Microtron', '778734098', 'mandiri.png'),
-(4, 'BCA', 'Microtron', '998980342487', 'bca.png');
+(1, 'BNI', 'Rafli', '12345678', 'bni.png'),
+(2, 'BRI', 'Rafli', '87873412323', 'bri.png'),
+(3, 'Mandiri', 'Rafli', '778734098', 'mandiri.png'),
+(4, 'BCA', 'Rafli', '998980342487', 'bca.png');
 
 -- --------------------------------------------------------
 
@@ -105,7 +105,7 @@ CREATE TABLE `company` (
 --
 
 INSERT INTO `company` (`id_company`, `company_name`, `company_desc`, `company_address`, `company_maps`, `company_phone`, `company_phone2`, `company_fax`, `company_email`, `foto`, `foto_type`, `created`, `modified`, `created_by`, `modified_by`) VALUES
-(1, 'TechFuts (Technopark Futsal)', 'Rancangan sewa lapangan futsal berbasis web (TechFuts)  adalah suatu sistem yang dirancang untuk memudahkan proses penyewaan lapangan futsal secara online. Sistem ini memungkinkan pengguna untuk melihat informasi tentang lapangan futsal, melakukan pemesanan, dan melakukan pembayaran secara online.', 'no 2 kelurahan kecamatan cipayung, Jl. Perintis, RT.5/RW.5, Ceger, Jakarta timur, DKI Jakarta, Daerah Khusus Ibukota Jakarta 13820', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16327777.649419477!2d108.84621849858628!3d-2.415291213289622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sen!2sid!4v1506312173230\" width=\"100%\" height=\"200\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', '081241412', '0711412402', '12414', 'techfuts@gmail.com', 'techfuts-technopark-futsal20240523222358', '.PNG', '2017-11-09 06:45:34', NULL, 'amperakoding', 'superadmin');
+(1, 'TechFuts (Technopark Futsal)', 'Rancangan sewa lapangan futsal berbasis web (TechFuts)  adalah suatu sistem yang dirancang untuk memudahkan proses penyewaan lapangan futsal secara online. Sistem ini memungkinkan pengguna untuk melihat informasi tentang lapangan futsal, melakukan pemesanan, dan melakukan pembayaran secara online.', 'no 2 kelurahan kecamatan cipayung, Jl. Perintis, RT.5/RW.5, Ceger, Jakarta timur, DKI Jakarta, Daerah Khusus Ibukota Jakarta 13820', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16327777.649419477!2d108.84621849858628!3d-2.415291213289622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sen!2sid!4v1506312173230\" width=\"100%\" height=\"200\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', '081241412', '0711412402', '12414', 'techfuts@gmail.com', 'techfuts-technopark-futsal20240625121724', '.png', '2017-11-09 06:45:34', NULL, 'superadmin', 'superadmin');
 
 -- --------------------------------------------------------
 
@@ -150,9 +150,9 @@ CREATE TABLE `event` (
 --
 
 INSERT INTO `event` (`id_event`, `nama_event`, `slug_event`, `deskripsi`, `kategori`, `foto`, `foto_type`, `created_at`, `created_by`, `modified_at`, `modified_by`) VALUES
-(5, 'BSI FLASH 2023', 'bsi-flash-2023', '<p>BSI FLASH 2023<br>Tournament futsal anter siswa SMK/SMA yang di adakan oleh universitas BSI</p>', 1, 'bsi-flash-202320240523151328', '.jpg', '2018-04-03 10:03:54', 'amperakoding', '2024-05-23 15:13:28', 'superadmin'),
-(6, 'Dinus Futsal Club', 'dinus-futsal-club', '<p>JADWAL PELAKSANAAN</p>\r\n<p>Technical Meeting<br>Hari, Tanggal : Sabtu, 20 Januari 2024<br>Tempat : I5.3 UDINUS<br>Opening Ceremony<br>Hari, Tanggal : Sabtu, 27 Januari 2024<br>Jam : 07.00<br>Tempat : GOR Patriot Semarang<br>Acara : Pembukaan (Sambutan – sambutan)<br>Pengucapan Janji (Wasit dan Atlet)<br>Penutupan<br>Dinus Futsal Cup 2024<br>Hari, Tanggal : Sabtu – Minggu, 27- 28 Januari 2024<br>Jam : 08.00 WIB – selesai<br>Tempat : GOR Patriot Semarang<br>Sistem Pertandingan : Sistem group<br>Closing Ceremony<br>Hari, Tanggal : Sabtu, 28 Januari 2024<br>Tempat : GOR Patriot Semarang<br>Acara : Penyerahan simbolis juara 1, 2, 3 serta best player, top score, best GK, juara 1 dan 2 best supporter<br>PERSYARATAN PEMAIN</p>\r\n<p>Setiap pemain wajib:<br>Melampirkan 1 lembar asli dan fotocopy Kartu Tanda Pelajar atau rapot lembar depan.<br>Surat Keterangan/ Rekomendasi siswa aktif dari SMA/SMK/MA/MAK Sederajat<br>2 lembar foto 3×4 berwarna<br>Persyaratan pemain point 1 dapat menunjukkan copy dan aslinya pada saat pertandingan. Peraturan ini di dibuat untuk menghindari kecurangan yang dilakukan oleh setiap tim (pemain) yang mendaftarkan diri. Apabila ditemukan kecurangan di dalam persayaratan tersebut, maka pihak panitia berhak menolak tim (pemain) tersebut bertanding (DISKUALIFIKASI), serta diberitakan buruk di media cetak dan elektronik karena melakukan suatu tindakan pidana.<br>PERSYARATAN TEAM</p>\r\n<p>Melengkapi daftar susunan 12 Pemain & 2 Official yang telah diberikan oleh pihak panitia.<br>Setiap tim wajib mengisi & menanda tangani Surat Pernyataan, yang diberikan panpel dan surat pernyataan tersebut wajib di tanda tangani oleh Manager Tim (Pembina) & bermaterai 10.000,-.<br>Setiap sekolah dilarang keras menggunakan pemain yang tidak didaftarkan dalam sekolah atau pemain dari sekolah lain.<br>Seluruh persyaratan tersebut diatas wajib dilengkapi dan di serahkan paling lambat saat Technical Meeting dan bila tim peserta tidak dapat menyerahkan persyaratan pada tanggal yang telah di tentukan panitia penyelenggara, maka tim tersebut di anggap mengundurkan diri.<br>PEMAIN DAN OFFICIAL</p>\r\n<p>Pemain dan Official terdaftar dalam surat keabsahan / daftar susunan 12 pemain dan 2 orang official yang ditandatangani oleh Manager Tim (Penanggung jawab) dari tim yang bersangkutan.<br>Dilarang keras menggunakan pemain yang tidak terdaftar dalam formulir pendaftaran.<br>Official adalah anggota tim peserta yang berfungsi sebagai Manager Tim, Pelatih, Ass Pelatih atau Penanggung Jawab Tim.<br>PERATURAN KHUSUS PERTANDINGAN</p>\r\n<p>Sistematika Pertandingan :<br>PUTERA<br>24 tim yang dibagi menjadi 8 grup<br>Setiap Tim bermain 2 x di fase grup<br>Juara Grup di akhir klasemen berhak melaju ke babak selanjutnya 8 besar.<br>Babak 8 besar dilakukan secara Knock Out (Gugur).<br>Perhitungan Klasemen, antara lain :<br>Nilai / Point<br>Selisih Gol<br>Memasukan Gol Lebih Banyak ( + )<br>Kemasukan Gol Lebih Sedikit ( – )<br>Pertemuan Tim / Head To Head<br>Perhitungan kartu kuning dan kartu merah<br>Gol tercepat<br>Waktu Pertandingan : 2 x 10 menit kotor , dengan waktu istirahat / jeda pertandingan 5 menit, dan Saat Time Out waktu pertandingan berhenti (waktu pertandingan menggunakan waktu yang terdapat pada wasit serta menggunakan scoring table manual dan stop watch sebagai report catatan pertandingan), dan waktu berhenti apabila ada permintaan dari wasit (cidera berat & yang dianggap perlu oleh wasit)<br>Waktu WO : Adalah 10 menit dari jadwal pertandingan ( disesuaikan ). Tim peserta dinyatakan kalah WO bila tidak dapat mengisi FORMULIR LINE UP pemain dengan jumlah pemain minimal 4 orang pada akhir waktu 10 menit tersebut ( saat kick off ) dengan skor 10 – 0 untuk tim lawan<br>Pelanggaran kartu kuning dan kartu merah<br>Sangsi akumulasi Kartu Kuning :<br>Pemain yang mendapatkan 2 kartu kuning pada saat pertandingan yang berbeda, pemain tersebut mendapatkan hukuman tidak diperbolehkan bermain pada 1 pertandingan berikutnya<br>Pemain yang mendapatkan 2 kartu kuning pada saat pertandingan yang sama ( Secara otomatis langsung mendapatkan kartu merah ), pemain tersebut akan mendapatkan hukuman tidak diperbolehkan bermain pada 1 pertandingan berikutnya.</p>', 1, 'dinus-futsal-club20240523150832', '.jpg', '2018-04-03 11:08:48', 'amperakoding', '2024-05-23 15:08:33', 'superadmin'),
-(7, 'Battle Futsal With Intern Campus 2022', 'battle-futsal-with-intern-campus-2022', '<p>Battle Futsal With Intern Campus 2022, Ajang Kompetisi Futsal Besutan Mata Kuliah Event Mahasiswa<br>25 Juni 2022<br>Bandung – Sabtu, 25 Juni 2022, Event Organizer mengadakan Event Futsal “Battle Futsal With Intern Campus” yang bertujuan untuk memfasilitasi dan menjalin silaturahmi mahasiswa UNIBI yang memiliki minat di bidang olahraga, khususnya Futsal. Event ini diadakan untuk memenuhi tugas Ujian Akhir Semester 6 mata kuliah Event & Liaison Manajement Program Studi Ilmu Komunikasi. Event futsal ini dilaksanakan dengan sistem fourfeo yang diikuti oleh 4 team dari berbagai prodi UNIBI, yaitu prodi Sistem Informasi, prodi Akuntansi, prodi Desain Komunikasi Visual dan prodi Manajemen. Dihadiri oleh Ibu Shinta Hartini Putri S.I.Kom., M.Si selaku Ketua Prodi Ilmu Komunikasi yang memberikan sambutan di awal acara, Team Pocari Sweat yang memberikan presentasi materi dan penampilan guest star Shafira Qurrotu Aini yang menyanyikan 2 lagu. Hasil dari pertandingan futsal ini, dimenangkan oleh Team dari Prodi Sistem Informasi sebagai Juara Champion dengan hadiah uang tunai Rp 500.000, Team dari Prodi Akuntansi sebagai Juara Runner Up dengan hadiah uang tunai Rp 300.000, Team dari Prodi Desain Komunikasi Visual dengan hadiah uang tunai Rp 200.000 dan Team dari Prodi Manajemen dengan hadiah Vest. <br> <br>Event ini disupport oleh PT Segitiga Satu Arah, Pocari Sweat, Ayam Bang Dava, Ghold Apparel, Keza Hijab, PT Kahatex, dan Sikumbahclean.</p>\r\n<div id=\"gtx-trans\"> </div>', 1, 'battle-futsal-with-intern-campus-202220240523150436', '.jpg', '2018-04-03 11:11:51', 'amperakoding', '2024-05-23 15:05:05', 'superadmin');
+(5, 'BSI FLASH 2023', 'bsi-flash-2023', '<p>BSI FLASH 2023<br>Tournament futsal anter siswa SMK/SMA yang di adakan oleh universitas BSI</p>', 1, 'bsi-flash-202320240523151328', '.jpg', '2018-04-03 10:03:54', 'superadmin', '2024-07-04 19:11:07', 'superadmin'),
+(6, 'Dinus Futsal Club', 'dinus-futsal-club', '<p>JADWAL PELAKSANAAN</p>\r\n<p>Technical Meeting<br>Hari, Tanggal : Sabtu, 20 Januari 2024<br>Tempat : I5.3 UDINUS<br>Opening Ceremony<br>Hari, Tanggal : Sabtu, 27 Januari 2024<br>Jam : 07.00<br>Tempat : GOR Patriot Semarang<br>Acara : Pembukaan (Sambutan – sambutan)<br>Pengucapan Janji (Wasit dan Atlet)<br>Penutupan<br>Dinus Futsal Cup 2024<br>Hari, Tanggal : Sabtu – Minggu, 27- 28 Januari 2024<br>Jam : 08.00 WIB – selesai<br>Tempat : GOR Patriot Semarang<br>Sistem Pertandingan : Sistem group<br>Closing Ceremony<br>Hari, Tanggal : Sabtu, 28 Januari 2024<br>Tempat : GOR Patriot Semarang<br>Acara : Penyerahan simbolis juara 1, 2, 3 serta best player, top score, best GK, juara 1 dan 2 best supporter<br>PERSYARATAN PEMAIN</p>\r\n<p>Setiap pemain wajib:<br>Melampirkan 1 lembar asli dan fotocopy Kartu Tanda Pelajar atau rapot lembar depan.<br>Surat Keterangan/ Rekomendasi siswa aktif dari SMA/SMK/MA/MAK Sederajat<br>2 lembar foto 3×4 berwarna<br>Persyaratan pemain point 1 dapat menunjukkan copy dan aslinya pada saat pertandingan. Peraturan ini di dibuat untuk menghindari kecurangan yang dilakukan oleh setiap tim (pemain) yang mendaftarkan diri. Apabila ditemukan kecurangan di dalam persayaratan tersebut, maka pihak panitia berhak menolak tim (pemain) tersebut bertanding (DISKUALIFIKASI), serta diberitakan buruk di media cetak dan elektronik karena melakukan suatu tindakan pidana.<br>PERSYARATAN TEAM</p>\r\n<p>Melengkapi daftar susunan 12 Pemain & 2 Official yang telah diberikan oleh pihak panitia.<br>Setiap tim wajib mengisi & menanda tangani Surat Pernyataan, yang diberikan panpel dan surat pernyataan tersebut wajib di tanda tangani oleh Manager Tim (Pembina) & bermaterai 10.000,-.<br>Setiap sekolah dilarang keras menggunakan pemain yang tidak didaftarkan dalam sekolah atau pemain dari sekolah lain.<br>Seluruh persyaratan tersebut diatas wajib dilengkapi dan di serahkan paling lambat saat Technical Meeting dan bila tim peserta tidak dapat menyerahkan persyaratan pada tanggal yang telah di tentukan panitia penyelenggara, maka tim tersebut di anggap mengundurkan diri.<br>PEMAIN DAN OFFICIAL</p>\r\n<p>Pemain dan Official terdaftar dalam surat keabsahan / daftar susunan 12 pemain dan 2 orang official yang ditandatangani oleh Manager Tim (Penanggung jawab) dari tim yang bersangkutan.<br>Dilarang keras menggunakan pemain yang tidak terdaftar dalam formulir pendaftaran.<br>Official adalah anggota tim peserta yang berfungsi sebagai Manager Tim, Pelatih, Ass Pelatih atau Penanggung Jawab Tim.<br>PERATURAN KHUSUS PERTANDINGAN</p>\r\n<p>Sistematika Pertandingan :<br>PUTERA<br>24 tim yang dibagi menjadi 8 grup<br>Setiap Tim bermain 2 x di fase grup<br>Juara Grup di akhir klasemen berhak melaju ke babak selanjutnya 8 besar.<br>Babak 8 besar dilakukan secara Knock Out (Gugur).<br>Perhitungan Klasemen, antara lain :<br>Nilai / Point<br>Selisih Gol<br>Memasukan Gol Lebih Banyak ( + )<br>Kemasukan Gol Lebih Sedikit ( – )<br>Pertemuan Tim / Head To Head<br>Perhitungan kartu kuning dan kartu merah<br>Gol tercepat<br>Waktu Pertandingan : 2 x 10 menit kotor , dengan waktu istirahat / jeda pertandingan 5 menit, dan Saat Time Out waktu pertandingan berhenti (waktu pertandingan menggunakan waktu yang terdapat pada wasit serta menggunakan scoring table manual dan stop watch sebagai report catatan pertandingan), dan waktu berhenti apabila ada permintaan dari wasit (cidera berat & yang dianggap perlu oleh wasit)<br>Waktu WO : Adalah 10 menit dari jadwal pertandingan ( disesuaikan ). Tim peserta dinyatakan kalah WO bila tidak dapat mengisi FORMULIR LINE UP pemain dengan jumlah pemain minimal 4 orang pada akhir waktu 10 menit tersebut ( saat kick off ) dengan skor 10 – 0 untuk tim lawan<br>Pelanggaran kartu kuning dan kartu merah<br>Sangsi akumulasi Kartu Kuning :<br>Pemain yang mendapatkan 2 kartu kuning pada saat pertandingan yang berbeda, pemain tersebut mendapatkan hukuman tidak diperbolehkan bermain pada 1 pertandingan berikutnya<br>Pemain yang mendapatkan 2 kartu kuning pada saat pertandingan yang sama ( Secara otomatis langsung mendapatkan kartu merah ), pemain tersebut akan mendapatkan hukuman tidak diperbolehkan bermain pada 1 pertandingan berikutnya.</p>', 1, 'dinus-futsal-club20240523150832', '.jpg', '2018-04-03 11:08:48', 'superadmin', '2024-07-04 19:11:13', 'superadmin'),
+(7, 'Battle Futsal With Intern Campus 2022', 'battle-futsal-with-intern-campus-2022', '<p>Battle Futsal With Intern Campus 2022, Ajang Kompetisi Futsal Besutan Mata Kuliah Event Mahasiswa<br>25 Juni 2022<br>Bandung – Sabtu, 25 Juni 2022, Event Organizer mengadakan Event Futsal “Battle Futsal With Intern Campus” yang bertujuan untuk memfasilitasi dan menjalin silaturahmi mahasiswa UNIBI yang memiliki minat di bidang olahraga, khususnya Futsal. Event ini diadakan untuk memenuhi tugas Ujian Akhir Semester 6 mata kuliah Event & Liaison Manajement Program Studi Ilmu Komunikasi. Event futsal ini dilaksanakan dengan sistem fourfeo yang diikuti oleh 4 team dari berbagai prodi UNIBI, yaitu prodi Sistem Informasi, prodi Akuntansi, prodi Desain Komunikasi Visual dan prodi Manajemen. Dihadiri oleh Ibu Shinta Hartini Putri S.I.Kom., M.Si selaku Ketua Prodi Ilmu Komunikasi yang memberikan sambutan di awal acara, Team Pocari Sweat yang memberikan presentasi materi dan penampilan guest star Shafira Qurrotu Aini yang menyanyikan 2 lagu. Hasil dari pertandingan futsal ini, dimenangkan oleh Team dari Prodi Sistem Informasi sebagai Juara Champion dengan hadiah uang tunai Rp 500.000, Team dari Prodi Akuntansi sebagai Juara Runner Up dengan hadiah uang tunai Rp 300.000, Team dari Prodi Desain Komunikasi Visual dengan hadiah uang tunai Rp 200.000 dan Team dari Prodi Manajemen dengan hadiah Vest. <br> <br>Event ini disupport oleh PT Segitiga Satu Arah, Pocari Sweat, Ayam Bang Dava, Ghold Apparel, Keza Hijab, PT Kahatex, dan Sikumbahclean.</p>\r\n<div id=\"gtx-trans\"> </div>', 1, 'battle-futsal-with-intern-campus-202220240523150436', '.jpg', '2018-04-03 11:11:51', 'superadmin', '2024-07-04 19:11:15', 'superadmin');
 
 -- --------------------------------------------------------
 
@@ -177,15 +177,15 @@ CREATE TABLE `foto` (
 --
 
 INSERT INTO `foto` (`id_foto`, `album_id`, `nama_foto`, `slug_foto`, `foto`, `created_by`, `created_at`, `modified_by`, `modified_at`) VALUES
-(1, 1, 'Testing Saja Cuis', 'testing-saja-cuis', 'testing-saja-cuis20180411025319.jpg', 'amperakoding', '2018-04-11 07:41:29', 'amperakoding', '2021-05-17 19:57:13'),
-(2, 4, 'Foto Lagi Coba', 'foto-lagi-coba', 'foto-lagi-coba20180411024503.jpg', 'amperakoding', '2018-04-11 07:45:03', 'amperakoding', '2021-05-17 19:58:17'),
-(3, 3, 'Foto Coba Lagi Saja', 'foto-coba-lagi-saja', 'foto-coba-lagi-saja20180411024712.jpg', 'amperakoding', '2018-04-11 07:47:12', 'amperakoding', '2021-05-17 19:58:17'),
-(4, 1, 'Teasdasd', 'teasdasd', 'teasdasd20180414101405.png', 'amperakoding', '2018-04-14 15:13:17', 'amperakoding', '2021-05-17 19:57:13'),
-(5, 3, 'Agains', 'agains', 'agains20180414101428.jpg', 'amperakoding', '2018-04-14 15:14:29', 'amperakoding', '2021-05-17 19:58:17'),
-(6, 4, 'Waasd', 'waasd', 'waasd20180414101515.jpg', 'amperakoding', '2018-04-14 15:15:15', 'amperakoding', '2021-05-17 19:58:17'),
-(7, 1, 'ASczxc', 'asczxc', 'asczxc20180414101545.jpg', 'amperakoding', '2018-04-14 15:15:45', 'amperakoding', '2021-05-17 19:58:17'),
-(8, 1, 'ASXzc', 'asxzc', 'asxzc20180414101604.jpg', 'amperakoding', '2018-04-14 15:16:05', 'amperakoding', '2021-05-17 19:58:17'),
-(9, 2, 'ASczxcacasc', 'asczxcacasc', 'asczxcacasc20180414101613.png', 'amperakoding', '2018-04-14 15:16:13', 'amperakoding', '2021-05-17 19:58:17');
+(1, 1, 'Testing Saja Cuis', 'testing-saja-cuis', 'testing-saja-cuis20180411025319.jpg', 'superadmin', '2018-04-11 07:41:29', 'superadmin', '2024-07-04 19:10:26'),
+(2, 4, 'Foto Lagi Coba', 'foto-lagi-coba', 'foto-lagi-coba20180411024503.jpg', 'superadmin', '2018-04-11 07:45:03', 'superadmin', '2024-07-04 19:10:35'),
+(3, 3, 'Foto Coba Lagi Saja', 'foto-coba-lagi-saja', 'foto-coba-lagi-saja20180411024712.jpg', 'superadmin', '2018-04-11 07:47:12', 'superadmin', '2024-07-04 19:10:39'),
+(4, 1, 'Teasdasd', 'teasdasd', 'teasdasd20180414101405.png', 'superadmin', '2018-04-14 15:13:17', 'superadmin', '2024-07-04 19:10:41'),
+(5, 3, 'Agains', 'agains', 'agains20180414101428.jpg', 'superadmin', '2018-04-14 15:14:29', 'superadmin', '2024-07-04 19:10:45'),
+(6, 4, 'Waasd', 'waasd', 'waasd20180414101515.jpg', 'superadmin', '2018-04-14 15:15:15', 'superadmin', '2024-07-04 19:10:47'),
+(7, 1, 'ASczxc', 'asczxc', 'asczxc20180414101545.jpg', 'superadmin', '2018-04-14 15:15:45', 'superadmin', '2024-07-04 19:10:50'),
+(8, 1, 'ASXzc', 'asxzc', 'asxzc20180414101604.jpg', 'superadmin', '2018-04-14 15:16:05', 'superadmin', '2024-07-04 19:10:53'),
+(9, 2, 'ASczxcacasc', 'asczxcacasc', 'asczxcacasc20180414101613.png', 'superadmin', '2018-04-14 15:16:13', 'superadmin', '2024-07-04 19:10:56');
 
 -- --------------------------------------------------------
 
@@ -245,8 +245,8 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `slug_kat`, `created_by`, `created_at`, `modified_by`, `modified_at`) VALUES
-(1, 'Turnamen', 'turnamen', 'amperakoding', '2018-07-23 08:38:39', 'amperakoding', '2021-05-17 19:58:57'),
-(2, 'Kerja Sama', 'kerja-sama', 'amperakoding', '2018-07-23 08:38:39', 'amperakoding', '2021-05-17 19:58:57');
+(1, 'Turnamen', 'turnamen', 'superadmin', '2018-07-23 08:38:39', 'superadmin', '2024-07-04 19:13:10'),
+(2, 'Kerja Sama', 'kerja-sama', 'superadmin', '2018-07-23 08:38:39', 'superadmin', '2024-07-04 19:13:13');
 
 -- --------------------------------------------------------
 
@@ -269,8 +269,8 @@ CREATE TABLE `kontak` (
 --
 
 INSERT INTO `kontak` (`id_kontak`, `nama_kontak`, `nohp`, `created_by`, `created_at`, `modified_by`, `modified_at`) VALUES
-(2, 'Rafli', '6285695034120', 'amperakoding', '2018-07-23 11:16:57', 'superadmin', '2024-05-23 14:59:43'),
-(3, 'Ahmad Fathurohman', '628815665834', 'amperakoding', '2018-07-23 11:20:44', 'superadmin', '2024-05-23 14:59:17');
+(2, 'Rafli', '6285695034120', 'superadmin', '2018-07-23 11:16:57', 'superadmin', '2024-07-04 19:13:23'),
+(3, 'Ahmad Fathurohman', '628815665834', 'superadmin', '2018-07-23 11:20:44', 'superadmin', '2024-07-04 19:13:26');
 
 -- --------------------------------------------------------
 
@@ -813,12 +813,12 @@ CREATE TABLE `lapangan` (
 --
 
 INSERT INTO `lapangan` (`id_lapangan`, `nama_lapangan`, `harga`, `foto`, `created_by`, `created_at`, `modified_by`, `modified_at`) VALUES
-(1, 'Lapangan A', 100000, 'lapangan-a20180610164236.jpg', 'amperakoding', '2018-06-10 15:37:43', 'amperakoding', '2021-05-17 19:59:32'),
-(2, 'Lapangan B', 150000, 'lapangan-b20180610164255.jpg', 'amperakoding', '2018-06-10 16:02:44', 'amperakoding', '2021-05-17 19:59:32'),
-(3, 'Lapangan C', 80000, 'lapangan-a20180610164250.jpg', 'amperakoding', '2018-06-10 16:16:17', 'amperakoding', '2021-05-17 19:59:32'),
-(4, 'Lapangan D', 100000, 'lapangan-b20180610164305.jpg', 'amperakoding', '2018-06-10 16:25:05', 'amperakoding', '2021-05-17 19:59:32'),
-(5, 'Lapangan E', 200000, 'lapangan-c20180610164320.jpg', 'amperakoding', '2018-06-10 16:38:10', 'amperakoding', '2021-05-17 19:59:32'),
-(6, 'Lapangan F', 150000, 'lapangan-c20180610164329.jpg', 'amperakoding', '2018-06-10 16:54:28', 'amperakoding', '2021-05-17 19:59:32');
+(1, 'Lapangan Karpet', 100000, 'lapangan-a20180610164236.jpg', 'superadmin', '2018-06-10 15:37:43', 'superadmin', '2024-07-04 19:13:46'),
+(2, 'Lapangan Vinil', 150000, 'lapangan-b20180610164255.jpg', 'superadmin', '2018-06-10 16:02:44', 'superadmin', '2024-07-04 19:13:49'),
+(3, 'Lapangan Sintetis', 80000, 'lapangan-a20180610164250.jpg', 'superadmin', '2018-06-10 16:16:17', 'superadmin', '2024-07-04 19:13:52'),
+(4, 'Lapangan Parquete', 100000, 'lapangan-b20180610164305.jpg', 'superadmin', '2018-06-10 16:25:05', 'superadmin', '2024-07-04 19:13:55'),
+(5, 'Lapangan Polypropylene', 100000, 'lapangan-c20180610164320.jpg', 'superadmin', '2018-06-10 16:38:10', 'superadmin', '2024-07-04 19:13:59'),
+(6, 'Lapangan Sintetis (Outdoor)', 200000, 'lapangan-c20180610164329.jpg', 'superadmin', '2018-06-10 16:54:28', 'superadmin', '2024-07-04 19:14:01');
 
 -- --------------------------------------------------------
 
@@ -934,9 +934,9 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`id_slider`, `no_urut`, `nama_slider`, `link`, `foto`, `foto_type`, `foto_size`, `created_at`, `created_by`, `modified_at`, `modified_by`) VALUES
-(1, 1, 'Slider 1', 'http://www.yahoo.com ', '120180610164516', '.jpg', 203, '2017-11-25 08:05:03', 'amperakoding', '2021-05-17 20:00:16', 'amperakoding'),
-(2, 2, 'Slider 2', 'http://www.google.com ', '220180610164521', '.jpg', 833, '2017-11-25 08:05:03', 'amperakoding', '2021-05-17 20:00:16', 'amperakoding'),
-(3, 3, 'XXZ', 'http://www.facebook.com', '320180610164527', '.jpg', 167, '2017-11-25 08:05:03', 'amperakoding', '2021-05-17 20:00:16', 'amperakoding');
+(1, 1, 'Slider 1', 'http://www.yahoo.com ', '120240625122451', '.jpg', 203, '2017-11-25 08:05:03', 'superadmin', '2024-07-04 19:14:37', 'superadmin'),
+(2, 2, 'Slider 2', 'http://www.google.com ', '220240625122502', '.jpg', 833, '2017-11-25 08:05:03', 'superadmin', '2024-07-04 19:14:40', 'superadmin'),
+(3, 3, 'Slider 3', 'http://www.facebook.com', '320240625122511', '.jpg', 167, '2017-11-25 08:05:03', 'superadmin', '2024-07-04 19:29:55', 'superadmin');
 
 -- --------------------------------------------------------
 
@@ -987,7 +987,12 @@ INSERT INTO `transaksi` (`id_trans`, `id_invoice`, `user_id`, `subtotal`, `disko
 (9, 'J-240419-0001', 5, 200000, 0, 200000, '2024-04-19 21:27:52', '', 1, '2024-04-19', '08:25:49'),
 (10, 'J-240420-0002', 5, 150000, 0, 150000, '2024-04-20 10:47:30', 'lapangan sesuai', 2, '2024-04-20', '09:46:48'),
 (11, 'J-240521-0001', 6, 250000, 0, 250000, '2024-05-23 21:22:58', 'lapangan sesuai', 1, '2024-05-21', '10:13:55'),
-(12, 'J-240526-0002', 1, 0, 0, 0, '0000-00-00 00:00:00', '', 0, '2024-05-26', '09:23:05');
+(12, 'J-240526-0002', 1, 0, 0, 0, '0000-00-00 00:00:00', '', 0, '2024-05-26', '09:23:05'),
+(13, 'J-240628-0001', 6, 100000, 0, 100000, '2024-06-28 09:42:10', 'fatur', 1, '2024-06-28', '08:41:32'),
+(14, 'J-240628-0002', 6, 100000, 0, 100000, '2024-07-04 23:44:31', 'mau bayar', 1, '2024-06-28', '09:12:43'),
+(15, 'J-240704-0001', 6, 200000, 0, 200000, '2024-07-04 23:50:19', 'belanja', 1, '2024-07-04', '10:50:07'),
+(16, 'J-240705-0002', 6, 0, 0, 0, '0000-00-00 00:00:00', '', 0, '2024-07-05', '08:49:02'),
+(17, 'J-240705-0003', 9, 250000, 0, 250000, '2024-07-05 11:21:27', '', 2, '2024-07-05', '10:19:37');
 
 -- --------------------------------------------------------
 
@@ -1028,7 +1033,15 @@ INSERT INTO `transaksi_detail` (`id_transdet`, `trans_id`, `lapangan_id`, `tangg
 (13, 10, 2, '2024-04-21', '19:00:00', 1, '20:00:00', 150000, 150000, '2024-04-20 09:46:48'),
 (14, 11, 2, '2024-05-24', '16:00:00', 1, '17:00:00', 150000, 150000, '2024-05-21 22:13:55'),
 (15, 11, 1, '2024-05-25', '20:00:00', 1, '21:00:00', 100000, 100000, '2024-05-23 20:18:27'),
-(16, 12, 1, '0000-00-00', NULL, 0, NULL, 100000, 100000, '2024-05-26 21:23:05');
+(16, 12, 1, '0000-00-00', NULL, 0, NULL, 100000, 100000, '2024-05-26 21:23:05'),
+(17, 13, 1, '2024-06-29', '16:00:00', 1, '17:00:00', 100000, 100000, '2024-06-28 08:41:32'),
+(18, 14, 4, '2024-07-05', '13:00:00', 1, '14:00:00', 100000, 100000, '2024-06-28 09:12:43'),
+(19, 12, 6, '0000-00-00', NULL, 0, NULL, 200000, 200000, '2024-07-04 19:31:50'),
+(20, 12, 4, '0000-00-00', NULL, 0, NULL, 100000, 100000, '2024-07-04 21:28:55'),
+(21, 15, 6, '2024-07-05', '18:00:00', 1, '19:00:00', 200000, 200000, '2024-07-04 22:50:07'),
+(22, 16, 4, '0000-00-00', NULL, 0, NULL, 100000, 100000, '2024-07-05 08:49:02'),
+(23, 17, 2, '2024-07-06', '16:00:00', 1, '17:00:00', 150000, 150000, '2024-07-05 10:19:37'),
+(24, 17, 5, '2024-07-07', '16:00:00', 1, '17:00:00', 100000, 100000, '2024-07-05 10:20:55');
 
 -- --------------------------------------------------------
 
@@ -1066,13 +1079,15 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `email`, `phone`, `provinsi`, `kota`, `address`, `usertype`, `active`, `photo`, `photo_type`, `ip_address`, `salt`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `last_login`, `created_on`, `modified`) VALUES
-(1, 'SuperAdmin', 'superadmin', '$2y$08$TWMdtdacqPE5yEz9n1LwFuhEVmiDTTsupl12M45tCQihzF1tu2N/6', 'superadmin@gmail.com', '081228289766', 6, 151, 'asdasdasdsa', 1, 1, 'mazmi20180205001726', '.jpg', '::1', NULL, NULL, NULL, NULL, NULL, 1718791593, 2147483647, '2024-06-19 17:06:33'),
+(1, 'SuperAdmin', 'superadmin', '$2y$08$TWMdtdacqPE5yEz9n1LwFuhEVmiDTTsupl12M45tCQihzF1tu2N/6', 'superadmin@gmail.com', '081228289766', 6, 151, 'asdasdasdsa', 1, 1, 'mazmi20180205001726', '.jpg', '::1', NULL, NULL, NULL, NULL, NULL, 1720149867, 2147483647, '2024-07-05 10:24:27'),
 (2, 'Admin', 'administrator', '$2y$08$rnCngWyQhFLdVJijctNDKuwJZ8o9VfcSsZ9IM9XN71ugxIpQFeCWe', 'administrator@gmail.com', '08124124', NULL, NULL, 'kaldjlas', 2, 1, 'admin20180424102408', '.jpeg', '::1', NULL, NULL, NULL, NULL, NULL, 1716456137, 1524551716, '2024-05-23 16:22:17'),
 (3, 'Batistuta', 'batistuta', '$2y$08$EET6QMLoCBIqmL.SySLUF.1TwJS0xP9WavXqNgycYurV/vq4azLuu', 'batistuta@gmail.com', '0812412414', 33, 327, 'Jl. Skdlajsdlasjkdl', 4, 1, NULL, NULL, '127.0.0.1', NULL, NULL, NULL, NULL, NULL, 1716731535, 1528634033, '2024-05-26 20:52:15'),
 (4, 'User Premium', 'userpremium', '$2y$08$Wv3MA.DnwTNzBeF62o9neuSXeVdIA/bjlxOzSxtD6DtgStEBn//s.', 'userpremium@gmail.com', '0812412412', 3, 106, 'kaljdklasjdkl', 3, 1, NULL, NULL, '::1', NULL, NULL, NULL, NULL, NULL, 1621252638, 1531807819, '2021-05-17 18:57:18'),
 (5, 'Ahmad Fathurohman', 'fathurrhm808', '$2y$08$cvbTwrICzeuvEi2Rf23kpe0R.fMnZFVncjfd4F9ZouLPYCHlfsKs.', 'fathurrhm808@gmail.com', '08815665834', 3, 403, 'LINK KEBAHARAN', 4, 1, NULL, NULL, '::1', NULL, NULL, NULL, NULL, NULL, 1718791570, 1713522968, '2024-06-19 17:06:10'),
-(6, 'Lentera', 'lenterahendra552', '$2y$08$n0nsiR3lqSN/t.bajmYgrO0V9PJzTzR7momNWWz.pVsTBe/KxUw6S', 'lenterahendra552@gmail.com', '087871095538', 3, 402, 'Jl.Serang-Banten, Kebaharan Masjid Al-Manar Rt.01 Rw.08 No.45', 4, 1, NULL, NULL, '::1', NULL, NULL, NULL, NULL, NULL, 1716731338, 1714807403, '2024-05-26 20:48:58'),
-(7, 'test', 'test', '$2y$08$8WZJwGPjfbdq/.vQK7qUM.xqSfbJY/we1GYwnhwfnmF8A.f8l3wv.', 'test@gmail.com', '08888888', 3, 402, 'test', 4, 1, NULL, NULL, '::1', NULL, NULL, NULL, NULL, NULL, NULL, 1714812512, NULL);
+(6, 'Lentera', 'lenterahendra552', '$2y$08$n0nsiR3lqSN/t.bajmYgrO0V9PJzTzR7momNWWz.pVsTBe/KxUw6S', 'lenterahendra552@gmail.com', '087871095538', 3, 402, 'Jl.Serang-Banten, Kebaharan Masjid Al-Manar Rt.01 Rw.08 No.45', 4, 1, NULL, NULL, '::1', NULL, NULL, NULL, NULL, NULL, 1720146744, 1714807403, '2024-07-05 09:32:24'),
+(7, 'test', 'test', '$2y$08$8WZJwGPjfbdq/.vQK7qUM.xqSfbJY/we1GYwnhwfnmF8A.f8l3wv.', 'test@gmail.com', '08888888', 3, 402, 'test', 4, 1, NULL, NULL, '::1', NULL, NULL, NULL, NULL, NULL, NULL, 1714812512, NULL),
+(8, 'salmanblack', 'black', '$2y$08$RT6YMcK08yp2wb5Tuyuwve2Q6oa7ITMKABh2FZBWpu2LytNtg8D1u', 'salmanganteng@gmail.com', '08261752517', 3, 106, 'Jl.Serang-Banten, Kebaharan Masjid Al-Manar Rt.01 Rw.08 No.45', 4, 1, NULL, NULL, '::1', NULL, NULL, NULL, NULL, NULL, NULL, 1720145895, NULL),
+(9, 'Rafli', 'rafli', '$2y$08$fsWrKauAUTK5/26kHYi2jOm0PrDpAjQiEJLkvtWYHSWGZo/SZpvEy', 'rafli@gmail.com', '08781095538', 9, 115, 'Margonda', 4, 1, NULL, NULL, '::1', NULL, NULL, NULL, NULL, NULL, 1720149377, 1720149326, '2024-07-05 10:16:17');
 
 -- --------------------------------------------------------
 
@@ -1273,7 +1288,7 @@ ALTER TABLE `lapangan`
 -- AUTO_INCREMENT for table `login_attempts`
 --
 ALTER TABLE `login_attempts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `page`
@@ -1297,19 +1312,19 @@ ALTER TABLE `subscriber`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_trans` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_trans` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `transaksi_detail`
 --
 ALTER TABLE `transaksi_detail`
-  MODIFY `id_transdet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_transdet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users_group`
